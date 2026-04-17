@@ -1,6 +1,6 @@
 # Comnandos Básicos para usar no Git.
 ## Descrição dos comandos.
-### git clone: lona um repositório remoto.
+### git clone: clona um repositório remoto.
 ### git add: adiciona arquivos ao stage (preparação).
 ### git commit: usando para criar uma mensagem para descrever o código que está sendo upado.
 ### git push: envia os commits para o repositório remoto.
