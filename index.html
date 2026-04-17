@@ -8,8 +8,71 @@
 <body>
     <h1>Formulário</h1>
     <form action="/registro" method="POST">
-        <label for="Nome">Nome:</label>
-        <input type="text"/>
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" placeholder="Digite seu primeiro nome"/>
+
+        <label for="email">E-mail:</label>
+        <input type="email" name="email" placeholder="Digite seu email"/>
+
+        <label for="senha">Senha:</label>
+        <input type="password" name="senha" placeholder="Digite sua senha"/>
+
+        <textarea name="mensagem" placeholder="digite oque você achou do system. . ."></textarea>
+
+        <h2>Preferencias</h2>
+        <p>Gênero:</p>
+
+        <input type="radio" name="genero" value="Masculino">
+        <label for="Masculino">Masculino</label>
+
+        <input type="radio" name="genero" value="Feminino">
+        <label for="Feminino">Feminino</label>
+
+        <input type="radio" name="genero" value="Outro">
+        <label for="Outro">Outro</label>
+
+        <p>Interesses:</p>
+
+        <input type="checkbox" name="Interesses" value="Músicas">
+        <label for="muscia">Musica</label>
+
+        <input type="checkbox" name="Interesses" value="Esportes">
+        <label for="esportes">Esportes</label>
+
+        <input type="checkbox" name="Interesses" value="Viagem">
+        <label for="viagem">Viagem</label>
+
+        <label for="cidade">Cidade: </label>
+        <select name="cidade">
+            <option value="">Selecione sua cidade</option>
+            <option value="Cajazeiras">Cajazeiras</option>
+            <option value="São João do Rio do Peixe">São João do Rio do Peixe</option>
+            <option value="Sousa">Sousa</option>
+            <option value="Marizópolis">Marizópolis</option>
+        </select>
+
+        <label for="data_nascimento">Data de Nascimento:</label>
+        <input type="date" name="data_nascimento">
+
+        <label for="hora_contato">Selecione o Horário</label>
+        <input type="time" name="hora_contato">
+
+        <label for="cor">Selecione a cor:</label>
+        <input type="color" name="cor">
+
+        <div>
+            <input type="file" name="arquivo" accept=".pdf, .png">
+        </div>
+
+        <div>
+            <input type="file" name="arquivo" accept=".pdf, .png, .mp3, mp4" multiple>
+        </div>
+        
+
+        <div>
+            <button type="submit">Enviar</button>
+            <button type="reset">limpar form</button>
+        </div>
 
     </form>
 </body>
